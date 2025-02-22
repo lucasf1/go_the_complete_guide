@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:8080
+
+### Signup
+post {{baseUrl}}/signup
+Content-Type: application/json
+
+{
+    "email": "test2@example.com",
+    "password": "test2"
+}
+
+### Login
+post {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "test2@example.com",
+    "password": "test2"
+}
+
+### Login - Invalid user
+post {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "test3@example.com",
+    "password": "something"
+}
